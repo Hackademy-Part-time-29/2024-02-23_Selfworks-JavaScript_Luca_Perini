@@ -26,7 +26,7 @@ function sfidaDadi() {
 
 }
 
-//sfidaDadi()
+sfidaDadi()
 
 //ESERCIZIO 2
 
@@ -46,3 +46,23 @@ function contatoreFizzbuzz (numero){
 }
 
 contatoreFizzbuzz(parseInt(prompt("inserisci un numero")))
+
+//ESERCIZIO 3
+
+function contatorediCifre (numero){
+    
+        if (numero <= 9) {
+            console.log("1 Cifra")
+        } else if (numero <= 99 && numero > 9){
+            console.log("2 Cifre")
+        } else if (numero <= 999 && numero > 99){
+            console.log("3 Cifre")
+        } else if (numero <= 9999 && numero > 999){
+            console.log("4 Cifre")
+        } else {
+            console.log("Numero Troppo Grande.");
+        }
+    
+}
+
+contatorediCifre(parseInt(prompt("inserisci un numero da 0 a 9999 e ti dirò da quante cifre è composto!")))
